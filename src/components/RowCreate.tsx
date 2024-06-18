@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {useCreateRowMutation} from "../services/api.ts";
-import {ListRow} from "../services/types.ts";
 import styled from "styled-components";
 import {theme} from "../styles/Theme.styled.tsx";
 import {StyledTableCell, StyledTableRow} from "./pages/CMP.styled.ts";
@@ -8,7 +7,7 @@ import {StyledTableCell, StyledTableRow} from "./pages/CMP.styled.ts";
 type Props = {
     eID: number
     parentId: number | null
-    onRowCreated: (newRow: ListRow) => void
+    onRowCreated: (newRow: any) => void
 }
 const textColor = theme.color.white.light
 

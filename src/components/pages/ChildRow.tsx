@@ -1,5 +1,5 @@
 import {theme} from "../../styles/Theme.styled.tsx";
-import {Child, ListRow} from "../../services/types.ts";
+import {Child} from "../../services/types.ts";
 import Edit from "../../assets/Edit.svg";
 import Delete from "../../assets/Delete.svg";
 import RowCreate from "../RowCreate.tsx";
@@ -12,7 +12,7 @@ type Props = {
     handleDeleteRowClick: (id: number) => void
     eID: number
     isAdding: number | null
-    handleRowAdded: (newRow: ListRow) => void
+    handleRowAdded: (newRow: any) => void
     level: number
     handleRowDoubleClick: (id:number) => void
     handleCancelEditing: (e: React.KeyboardEvent, id: number) => void
